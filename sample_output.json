@@ -1,0 +1,95 @@
+[
+  {
+    "person_id": "P001",
+    "extracted_data": {
+      "document_1": {
+        "full_name": "john doe",
+        "father_name": "james doe",
+        "date_of_birth": "15/05/1990",
+        "address": {
+          "house_number": "123",
+          "street": "main street",
+          "city": "mumbai",
+          "state": "maharashtra",
+          "pincode": "400001"
+        },
+        "phone_number": "9876543210",
+        "email": "john@example.com",
+        "aadhaar_number": "123456789012",
+        "pan_number": "ABCDE1234F",
+        "employee_id": null,
+        "account_number": null,
+        "document_type": "Government ID"
+      },
+      "document_2": {
+        "full_name": "john doe",
+        "father_name": null,
+        "date_of_birth": "15/05/1990",
+        "address": {
+          "house_number": "123",
+          "street": "main street",
+          "city": "mumbai",
+          "state": "maharashtra",
+          "pincode": "400001"
+        },
+        "phone_number": "9876543210",
+        "email": "john@example.com",
+        "aadhaar_number": null,
+        "pan_number": "ABCDE1234F",
+        "employee_id": null,
+        "account_number": "1234567890",
+        "document_type": "Bank Statement"
+      },
+      "document_3": {
+        "full_name": "john doe",
+        "father_name": "james doe",
+        "date_of_birth": "15/05/1990",
+        "address": {
+          "house_number": "123",
+          "street": "main street",
+          "city": "mumbai",
+          "state": "maharashtra",
+          "pincode": "400001"
+        },
+        "phone_number": "9876543210",
+        "email": "john@example.com",
+        "aadhaar_number": null,
+        "pan_number": null,
+        "employee_id": "EMP001",
+        "account_number": null,
+        "document_type": "Employment Letter"
+      }
+    },
+    "verification_results": {
+      "rule_1_name_match": {
+        "status": "PASS",
+        "message": "Names match across all documents"
+      },
+      "rule_2_dob_match": {
+        "status": "PASS",
+        "message": "DOB matches across all documents"
+      },
+      "rule_3_address_match": {
+        "status": "PASS",
+        "message": "Addresses match"
+      },
+      "rule_4_phone_match": {
+        "status": "PASS",
+        "message": "Phone numbers match"
+      },
+      "rule_5_father_name_match": {
+        "status": "PASS",
+        "message": "Father's names match"
+      },
+      "rule_6_pan_format": {
+        "status": "PASS",
+        "message": "PAN format valid"
+      },
+      "rule_7_aadhaar_format": {
+        "status": "PASS",
+        "message": "Aadhaar format valid"
+      }
+    },
+    "overall_status": "VERIFIED"
+  }
+]
